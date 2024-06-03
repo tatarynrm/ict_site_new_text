@@ -1,0 +1,318 @@
+.stages {
+padding-bottom: 100px;
+    &__inner {
+
+        padding-top: 100px;
+
+
+    
+    }
+
+    .stages__title {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+
+        h2 {
+            font-family: 'Benzin';
+            font-size: 120px;
+            line-height: 130px;
+            max-width:450px;
+            width: 450px;
+        }
+        .section__little-title {
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: hsl(0, 0%, 35%);
+            font-family: 'Benzin';
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            align-items: left;
+            text-align: left;
+    
+        }
+    
+        .stages__control-block{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            text-align: left;
+            align-items: right;
+            
+
+            span {
+                font-family: 'Benzin';
+                font-size: 18px;
+                line-height: 24px;
+                cursor: pointer!important;
+                transition: all .4s ease-in;
+
+                &.active {
+                    padding: 10px;
+                    border-radius: 11px;
+                    background-color: #304861;
+                    color: white;
+                    transition: all .4s ease-in;
+                }
+            }
+          
+            
+        }
+    
+ 
+     
+     }
+
+     .stages__items {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 100px;
+     
+    }
+}
+
+
+@media screen and (max-width:1320px) {
+    .stages {
+        padding-bottom: 100px;
+            &__inner {
+        
+                padding-top: 100px;
+        
+        
+            
+            }
+        
+            .stages__title {
+                // display: flex;
+                position: relative;
+                // justify-content: space-between;
+        
+                h2 {
+                    font-family: 'Benzin';
+                    font-size: 40px;
+                    line-height: 130px;
+                    // max-width:450px;
+                    width:100%;
+                }
+                .section__little-title {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    color: hsl(0, 0%, 35%);
+                    font-family: 'Benzin';
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 30px;
+                    align-items: left;
+                    text-align: left;
+            
+                }
+            
+                .stages__control-block{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    text-align: left;
+                    align-items: right;
+                    
+        
+                    span {
+                        font-family: 'Benzin';
+                        font-size: 18px;
+                        line-height: 24px;
+                        cursor: pointer!important;
+                        transition: all .4s ease-in;
+        
+                        &.active {
+                            padding: 10px;
+                            border-radius: 11px;
+                            background-color: #304861;
+                            color: white;
+                            transition: all .4s ease-in;
+                        }
+                    }
+                  
+                    
+                }
+            
+         
+             
+             }
+        
+             .stages__items {
+                margin-top: 40px;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-gap: 100px;
+             
+            }
+        }
+}
+@media screen and (max-width:840px) {
+    .stages {
+        padding-bottom: 100px;
+            &__inner {
+        
+                padding-top: 100px;
+        
+        
+            
+            }
+        
+            .stages__title {
+                // display: flex;
+                position: relative;
+                // justify-content: space-between;
+        
+                h2 {
+                    font-family: 'Benzin';
+                    font-size: 40px;
+                    line-height: 60px;
+                    // max-width:450px;
+                    width:100%;
+                }
+                .section__little-title {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    color: hsl(0, 0%, 35%);
+                    font-family: 'Benzin';
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 30px;
+                    align-items: left;
+                    text-align: left;
+            
+                }
+            
+                .stages__control-block{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    text-align: left;
+                    align-items: right;
+                    
+        
+                    span {
+                        font-family: 'Benzin';
+                        font-size: 18px;
+                        line-height: 24px;
+                        cursor: pointer!important;
+                        transition: all .4s ease-in;
+        
+                        &.active {
+                            padding: 10px;
+                            border-radius: 11px;
+                            background-color: #304861;
+                            color: white;
+                            transition: all .4s ease-in;
+                        }
+                    }
+                  
+                    
+                }
+            
+         
+             
+             }
+        
+             .stages__items {
+                margin-top: 40px;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 100px;
+             
+            }
+        }
+}
+@media screen and (max-width:660px) {
+    .stages {
+        padding-bottom: 100px;
+            &__inner {
+                padding-top: 20px;
+            }
+        
+            .stages__title {
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                h2 {
+                    font-family: 'Benzin';
+                    font-size: 40px;
+                    line-height: 50px;
+                    width:100%;
+                   padding-top: 40px;
+                }
+                .section__little-title {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    color: hsl(0, 0%, 35%);
+                    font-family: 'Benzin';
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 30px;
+                    align-items: left;
+                    text-align: left;
+            
+                }
+            
+                .stages__control-block{
+                    position: relative;
+                    height: auto;
+                    width: 100%;
+                    // position: absolute;
+                    // bottom: 0;
+                    // right: 0;
+                    // display: flex;
+                    // flex-direction: column;
+                    // gap: 20px;
+                    // text-align: left;
+                    // align-items: right;
+                    
+        
+                    span {
+                        font-family: 'Benzin';
+                        font-size: 18px;
+                        line-height: 24px;
+                        cursor: pointer!important;
+                        transition: all .4s ease-in;
+        
+                        &.active {
+                            padding: 10px;
+                            border-radius: 11px;
+                            background-color: #304861;
+                            color: white;
+                            transition: all .4s ease-in;
+                        }
+                    }
+                  
+                    
+                }
+            
+         
+             
+             }
+        
+             .stages__items {
+                margin-top: 40px;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 100px;
+             
+            }
+        }
+}

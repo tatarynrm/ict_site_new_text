@@ -1,0 +1,29 @@
+.quiz{
+
+    &__buttons {
+        z-index: 999999;
+        margin-top: 20px;
+    //    width: 100%;
+    display: flex;
+    // flex-direction: column;
+    gap: 20px;
+
+    button {
+        padding:30px 14px ;
+        font-size: 18px;
+        line-height: 25px;
+        font-family: 'Benzin';
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+
+    }
+    &__next-button {
+        background-color:  #FFFFFF;
+    }
+    &__back-button {
+    // background-color: hsl(0, 0%, 60%);
+    }
+}

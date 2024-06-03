@@ -1,0 +1,106 @@
+.map__card {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 400px;
+    max-height: 100vh;
+    width: 400px;
+    height: 100vh;
+    z-index: 9999;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    overflow-y: auto;
+   
+   &-close {
+    position: absolute;
+    z-index: 999999;
+    color: white;
+    cursor: pointer;
+   }
+
+&-address{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 17px;
+    font-family: 'Benzin';
+
+}
+    &-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        img {
+            width:100%;
+            height: 200px;
+            object-fit: contain;
+        }
+    }
+
+
+    &-info {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        max-height: 80vh;
+        gap: 20px;
+        overflow-y: scroll;
+  
+        &::-webkit-scrollbar {
+            width: 6px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #888; /* Цвет thumb */
+            border-radius: 5px; /* Закругление углов thumb */
+          }
+          &::-webkit-scrollbar-thumb:hover {
+            background-color: #555; /* Цвет thumb при наведении */
+          }
+        .head {
+            width: 100%;
+          
+
+&__img {
+    display: flex;
+    align-items: center;
+    text-align: center;  
+    width: 100%;
+    .img {
+        width: 150px;
+        height: 150px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+}
+        }
+    }
+  
+
+&-managers {
+    font-size: 20px;
+    border-top: 2px solid white;
+    padding-top: 20px;
+}
+
+
+
+}
+
+
+.vis {
+    font-family: 'Vis';
+}
+.benzin {
+    font-family: 'Benzin';
+}
+.name {
+    font-size: 20px;
+
+}

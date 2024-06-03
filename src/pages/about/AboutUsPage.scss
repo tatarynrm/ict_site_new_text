@@ -1,0 +1,156 @@
+.about__us-page {
+    background-color: black;
+    color: white;
+    .about__us {
+        background-color: black;
+        padding-top: 100px;
+    }
+    background-color: black;
+    .about__us-inner{
+    background-color: black;
+    }
+    &-inner {
+      .statistic__panel {
+        background-color:#94BBE6 ;
+        width: 100%;
+        height: 240px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-inner {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+
+
+            .service__item {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                position: relative;
+                padding: 5px;
+
+                .header__text {
+                    font-size: 40px;
+                    font-family: 'Benzin';
+                    line-height: 114px;
+                    color: #013154;
+                }
+                .title__text {
+                    font-family: 'Vis';
+                    font-size: 16px;
+                    // color: #080809;
+                    color: rgba(8, 8, 9, 0.5);
+                }
+
+
+                &::after{
+                    content: '';
+                    width: 1px;
+                    height: 5px;
+                    background-color: rgb(94, 94, 94);
+                    position: absolute;
+                    height: 100%;
+                    right: -20px;
+                }
+            }
+            
+        }
+    }
+    }
+    .advantages section {
+        background-color: white;
+    }
+
+
+    .about_us-text  {
+        font-size: 20px;
+        font-family: 'Vis';
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+
+            li {
+                list-style-type: circle;
+                margin-left: 80px;
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width:1076px) {
+    .services {
+
+
+        .statistic__panel {
+
+            &-inner {
+             
+
+
+                .service__item{
+                    .header__text {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:960px) {
+
+
+.about__us-page {
+    
+    .statistic__panel {
+        height: auto;
+    
+
+        &-inner {
+         
+            display: flex;
+            flex-direction: column;
+
+
+            .service__item{
+                .header__text {
+                    font-size: 30px;
+                }
+                &::after{
+                    content: '';
+                    width: 0px;
+                    height: 0px;
+                    background-color: rgb(94, 94, 94);
+                    position: absolute;
+                    height: 100%;
+                    right: -20px;
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+        .services__title {
+         h2 {
+            font-size: 40px;
+         }
+         .section__little-title{
+            font-size: 12px;
+            left: 0;
+         }
+    
+        }
+
+}

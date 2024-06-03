@@ -1,0 +1,29 @@
+.social__container {
+    transition: all .4s ease-in-out;
+
+    &:hover {
+        scale: 1.1;
+        transition: all .4s ease-in-out;
+    }
+    .social__bar.row {
+        display: flex;
+        flex-direction: row;
+    }
+
+ 
+}
+
+
+@media  screen and (max-width:876px) {
+    .social__bar .social__container{
+        display: none;
+    }
+    .social__bar.row .social__container{
+        display: flex;
+        flex-direction: row;
+    }
+    .social__bar .footer{
+        display: block;
+    }
+
+}

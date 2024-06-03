@@ -1,0 +1,139 @@
+.cargo__price {
+    // background-color: red;
+    position: relative;
+    // z-index: -1;
+    background-image: url('../../assets/images/cargo-price.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+  
+    color: white;
+
+    padding-top: 80px;
+
+    .cargo__quiz {
+
+        max-width: 600px;
+        border-bottom: 1px solid hsl(0, 0%, 55%);
+        padding-bottom: 20px;
+        h3{
+            font-family: 'Benzin';
+            font-size: 73px;
+            line-height: 73px;
+            letter-spacing: 5%;
+        }
+        p {
+            margin-top: 20px;
+            color: hsl(0, 0%, 55%);;
+            font-family: 'Vis';
+        }
+    }
+
+
+
+
+ .quiz__number {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    font-size: 48px;
+    .quiz__number-question {
+        font-family: 'Benzin';
+        font-size: 48px;
+    }
+ }
+
+ .quiz__buttons {
+    margin-top: 40px;
+ }
+
+ ul {
+    li {
+        font-family: 'Vis';
+        font-size: 16px;
+        line-height: 26px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+       
+        input {
+            font-size: 18px;
+            font-family: 'Vis';
+        }
+    }
+ }
+
+}
+
+@media screen and (max-width:960px) {
+    .cargo__price {
+        position: relative;
+        background-image: url('../../assets/images/cargo-price.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1000px;
+      
+        color: white;
+    
+        padding-top: 80px;
+    
+        .cargo__quiz {
+    
+            max-width: 600px;
+            border-bottom: 1px solid hsl(0, 0%, 55%);
+            padding-bottom: 20px;
+            h3{
+                font-family: 'Benzin';
+                font-size: 40px;
+                line-height: 73px;
+                letter-spacing: 5%;
+            }
+            p {
+                margin-top: 20px;
+                color: hsl(0, 0%, 55%);;
+                font-family: 'Vis';
+                font-size: 14px;
+            }
+        }
+    
+    
+    
+    
+     .quiz__number {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        font-size: 24px;
+        .quiz__number-question {
+            font-family: 'Benzin';
+            font-size: 24px;
+            margin-top: 40px;
+        }
+     }
+    
+     .quiz__buttons {
+        margin-top: 40px;
+     }
+    
+     ul {
+        li {
+            font-family: 'Vis';
+            font-size: 16px;
+            line-height: 26px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+           
+            input {
+                font-size: 18px;
+                font-family: 'Vis';
+            }
+        }
+     }
+    
+    }
+}

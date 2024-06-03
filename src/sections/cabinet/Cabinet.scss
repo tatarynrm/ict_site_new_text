@@ -1,0 +1,305 @@
+.cabinet {
+    background-color: black;
+    color: white;
+    padding: 120px 0px;
+
+    .cabinet__inner {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+
+        .cabinet__left {
+            max-width: 900px;
+            .cabinet__header {
+                border-bottom: 2px solid #212121;
+           
+                h2 {
+                    font-size: 78px;
+                    font-family: 'Benzin';
+                }
+
+                p{
+                    max-width: 460px;
+                    margin-bottom:36px ;
+                    font-family: 'Vis';
+                    font-size: 18px;
+                    margin-top: 16px;
+                }
+            }
+
+        .cabinet__bottom {
+            display: flex;
+            gap: 30px;
+            margin-top:44px ;
+         
+
+            button {
+                font-size: 18px;
+                font-family: 'Benzin';
+                padding: 36px 40px;
+                width: 100%;
+                background-color: #94BBE6;
+                border: none;
+                outline: none;
+                cursor: pointer!important;
+            }
+        }
+        }
+        .cabinet__right {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+.cabinet__controll-arrows{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+
+
+}
+            button {
+                border: none;
+                padding: 36px;
+
+                svg {
+                    width: 35px;
+                    height: 35px;
+                }
+                
+            }
+
+        }
+    }
+
+
+
+}
+
+@media screen and (max-width:1160px) {
+    .cabinet {
+        background-color: black;
+        color: white;
+        padding: 60px 0px;
+    
+        .cabinet__inner {
+            display: flex;
+            flex-direction: column;
+            
+            gap: 30px;
+    
+            .cabinet__left {
+                max-width: 900px;
+                .cabinet__header {
+                    border-bottom: 2px solid #212121;
+               
+                    h2 {
+                        font-size: 78px;
+                        font-family: 'Benzin';
+                    }
+    
+                    p{
+                        max-width: 460px;
+                        margin-bottom:36px ;
+                        font-family: 'Vis';
+                        font-size: 18px;
+                        margin-top: 16px;
+                    }
+                }
+    
+            .cabinet__bottom {
+                display: flex;
+                gap: 30px;
+                margin-top:44px ;
+             
+    
+                button {
+                    font-size: 18px;
+                    font-family: 'Benzin';
+                    padding: 36px 40px;
+                    width: 100%;
+                    background-color: #94BBE6;
+                    border: none;
+                    outline: none;
+                    cursor: pointer!important;
+                }
+            }
+            }
+            .cabinet__right {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+    .cabinet__controll-arrows{
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+    
+    
+    }
+                button {
+                    border: none;
+                    padding: 36px;
+    
+                    svg {
+                        width: 35px;
+                        height: 35px;
+                    }
+                    
+                }
+    
+            }
+        }
+    
+    }
+}
+@media screen and (max-width:960px) {
+    .cabinet {
+        background-color: black;
+        color: white;
+        padding: 60px 0px;
+    
+        .cabinet__inner {
+            display: flex;
+            flex-direction: column;
+            
+            gap: 30px;
+    
+            .cabinet__left {
+                max-width: 900px;
+                .cabinet__header {
+                    border-bottom: 2px solid #212121;
+               
+                    h2 {
+                        font-size: 40px;
+                        font-family: 'Benzin';
+                    }
+    
+                    p{
+                        max-width: 460px;
+                        margin-bottom:36px ;
+                        font-family: 'Vis';
+                        font-size: 18px;
+                        margin-top: 16px;
+                    }
+                }
+    
+            .cabinet__bottom {
+                display: flex;
+                flex-direction: column;
+                order:-1;
+                gap: 30px;
+                margin-top:44px ;
+             
+    
+                button {
+                    font-size: 18px;
+                    font-family: 'Benzin';
+                    padding: 20px;
+                    width: 100%;
+                    background-color: #94BBE6;
+                    border: none;
+                    outline: none;
+                    cursor: pointer!important;
+                }
+            }
+            }
+            .cabinet__right {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+    .cabinet__controll-arrows{
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+    
+    
+    }
+                button {
+                    border: none;
+                    padding: 36px;
+    
+                    svg {
+                        width: 35px;
+                        height: 35px;
+                    }
+                    
+                }
+    
+            }
+        }
+    
+    }
+}
+@media screen and (max-width:460px) {
+    .cabinet {
+        background-color: black;
+        color: white;
+        padding: 60px 0px;
+        .cabinet__inner {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .cabinet__left {
+                max-width: 900px;
+                .cabinet__header {
+                    border-bottom: 2px solid #212121;
+               
+                    h2 {
+                        font-size: 30px;
+                        font-family: 'Benzin';
+                    }
+    
+                    p{
+                        max-width: 460px;
+                        margin-bottom:36px ;
+                        font-family: 'Vis';
+                        font-size: 18px;
+                        margin-top: 16px;
+                    }
+                }
+    
+            .cabinet__bottom {
+                display: flex;
+                flex-direction: column;
+                order:-1;
+                gap: 30px;
+                margin-top:44px ;
+             
+    
+                button {
+                    font-size: 18px;
+                    font-family: 'Benzin';
+                    padding: 20px;
+                    width: 100%;
+                    background-color: #94BBE6;
+                    border: none;
+                    outline: none;
+                    cursor: pointer!important;
+                }
+            }
+            }
+            .cabinet__right {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+    .cabinet__controll-arrows{
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+    
+    
+    }
+                button {
+                    border: none;
+                    padding: 36px;
+    
+                    svg {
+                        width: 35px;
+                        height: 35px;
+                    }
+                    
+                }
+    
+            }
+        }
+    
+    }
+}

@@ -1,0 +1,183 @@
+.blog__item {
+    display: flex;
+    flex-direction: column;
+ 
+    width: 32%;
+    // max-width: 380px;
+    background-color: #212121;
+
+
+
+    .blog__img {
+        width: 100%;
+        height: 340px;
+        transition: all 0.3s ease;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+
+    .blog__info {
+        font-family: 'Benzin';
+        padding: 20px 34px;
+
+
+        .blog__title {
+            font-family: 'Benzin';
+            font-size: 18px;
+        }
+        .blog__short-info{
+            font-family: 'Vis';
+            font-size:14px ;
+            margin-top: 10px;
+        }
+        .blog__button {
+            margin-top: 14px;
+            width: 100%;
+            padding:30px 50px ;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            font-family: 'Benzin';
+            font-size: 14px;
+            border: 1px solid white;
+            cursor: pointer!important;
+        }
+    }
+}
+
+
+.blog__item:hover {
+    .blog__img{
+        scale: 1.01;
+        transition: all 0.3s ease;
+    }
+}
+
+
+@media screen and (max-width:960px) {
+    .blog__item {
+        display: flex;
+        flex-direction: column;
+     
+        width: 44%;
+        // max-width: 380px;
+        background-color: #212121;
+    
+    
+    
+        .blog__img {
+            width: 100%;
+            height: 340px;
+            transition: all 0.3s ease;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+    
+        .blog__info {
+            font-family: 'Benzin';
+            padding: 20px 34px;
+    
+    
+            .blog__title {
+                font-family: 'Benzin';
+                font-size: 18px;
+            }
+            .blog__short-info{
+                font-family: 'Vis';
+                font-size:14px ;
+                margin-top: 10px;
+            }
+            .blog__button {
+                margin-top: 14px;
+                width: 100%;
+                padding:30px 50px ;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                color: white;
+                font-family: 'Benzin';
+                font-size: 14px;
+                border: 1px solid white;
+            }
+        }
+    }
+    
+    
+    .blog__item:hover {
+        .blog__img{
+            scale: 1.01;
+            transition: all 0.3s ease;
+        }
+    }
+    
+}
+@media screen and (max-width:660px) {
+    .blog__item {
+        display: flex;
+        flex-direction: column;
+     
+        width: 100%;
+        // max-width: 380px;
+        background-color: #212121;
+    
+    
+    
+        .blog__img {
+            width: 100%;
+            height: 340px;
+            transition: all 0.3s ease;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+    
+        .blog__info {
+            font-family: 'Benzin';
+            padding: 20px 34px;
+    
+    
+            .blog__title {
+                font-family: 'Benzin';
+                font-size: 18px;
+            }
+            .blog__short-info{
+                font-family: 'Vis';
+                font-size:14px ;
+                margin-top: 10px;
+            }
+            .blog__button {
+                margin-top: 14px;
+                width: 100%;
+                padding:30px 50px ;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                color: white;
+                font-family: 'Benzin';
+                font-size: 14px;
+                border: 1px solid white;
+            }
+        }
+    }
+    
+    
+    .blog__item:hover {
+        .blog__img{
+            scale: 1.01;
+            transition: all 0.3s ease;
+        }
+    }
+    
+}

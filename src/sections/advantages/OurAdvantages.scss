@@ -1,0 +1,204 @@
+.advantages {
+
+    &__inner {
+        margin-top: 100px;
+        position: relative;
+        z-index:999;
+     
+    }
+
+    &__title {
+        position: relative;
+        h2 {
+            max-width: 800px;
+            font-size: 120px;
+            font-family: 'Benzin';
+            color: #080809;
+        }
+
+
+        .section__little-title {
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: hsl(0, 0%, 35%);
+            font-family: 'Benzin';
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            align-items: right;
+            text-align: right;
+        }
+    }
+
+    .adventages__items {
+     margin-top: 40px;
+     display: grid;
+     gap: 40px;
+     grid-template-columns: 1fr 1fr 1fr;
+
+    border-bottom: 1px solid #D4D4D4;
+    border-top: 1px solid #D4D4D4;
+    padding:40px 0px ;
+    padding-bottom: 120px;
+    position: relative;
+    z-index: 999999;
+
+   border-bottom-right-radius: 10px;
+
+
+     justify-content: space-between;
+     align-items: center;
+     text-align: center;
+
+
+     .heading {
+        
+     }
+
+
+     .adventages__item {
+        max-width: 100%;
+     }
+    }
+
+    
+}
+
+
+@media screen and (max-width:960px) {
+    .advantages {
+
+        &__inner {
+            margin-top: 100px;
+            position: relative;
+            z-index:999;
+         
+        }
+    
+        &__title {
+            position: relative;
+            h2 {
+                max-width: 800px;
+                font-size: 40px;
+                font-family: 'Benzin';
+                color: #080809;
+            }
+    
+    
+            .section__little-title {
+                position: absolute;
+                top: -60px;
+                color: hsl(0, 0%, 35%);
+                font-family: 'Benzin';
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 30px;
+                align-items: right;
+                text-align: right;
+            }
+        }
+    
+        .adventages__items {
+         margin-top: 40px;
+         display: grid;
+         gap: 40px;
+         grid-template-columns:1fr 2fr ;
+    
+        border-bottom: 1px solid #D4D4D4;
+        border-top: 1px solid #D4D4D4;
+        padding:40px 0px ;
+        padding-bottom: 120px;
+        position: relative;
+        z-index: 999999;
+    
+       border-bottom-right-radius: 10px;
+    
+    
+         justify-content: space-between;
+         align-items: center;
+         text-align: center;
+    
+    
+         .heading {
+            
+         }
+    
+    
+         .adventages__item {
+            max-width: 100%;
+         }
+        }
+    
+        
+    }
+    
+}
+@media screen and (max-width:760px) {
+    .advantages {
+
+        &__inner {
+            margin-top: 100px;
+            position: relative;
+            z-index:999;
+         
+        }
+    
+        &__title {
+            position: relative;
+            h2 {
+                max-width: 800px;
+                font-size: 40px;
+                font-family: 'Benzin';
+                color: #080809;
+            }
+    
+    
+            .section__little-title {
+                position: absolute;
+                top: -60px;
+                color: hsl(0, 0%, 35%);
+                font-family: 'Benzin';
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 30px;
+                align-items: right;
+                text-align: right;
+            }
+        }
+    
+        .adventages__items {
+         margin-top: 0px;
+         display: grid;
+         gap: 40px;
+         grid-template-columns:1fr ;
+    
+        border-bottom: 1px solid #D4D4D4;
+        border-top: 1px solid #D4D4D4;
+        padding:40px 0px ;
+        padding-bottom: 120px;
+        position: relative;
+        z-index: 999999;
+    
+       border-bottom-right-radius: 10px;
+    
+    
+         justify-content: space-between;
+         align-items: center;
+         text-align: center;
+    
+    
+         .heading {
+            
+         }
+    
+    
+         .adventages__item {
+            max-width: 100%;
+         }
+        }
+    
+        
+    }
+    
+}

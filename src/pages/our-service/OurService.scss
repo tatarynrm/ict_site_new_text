@@ -1,0 +1,49 @@
+.our__service {
+    background-color: black;
+    color: white;
+    color: white;
+        &-inner {
+            padding-top: 240px;
+        h1 {
+            font-family: 'Benzin';
+            font-size: 120px;
+            margin-bottom: 40px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns:repeat(2,1fr);
+            gap: 40px;
+
+            .service__card {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1040px) {
+    .our__service {
+        background-color: black;
+        color: white;
+        color: white;
+            &-inner {
+                padding-top: 240px;
+            h1 {
+                font-family: 'Benzin';
+                font-size: 40px;
+                margin-bottom: 40px;
+            }
+    
+            .services {
+                display: grid;
+                grid-template-columns:1fr;
+                gap: 40px;
+    
+                .service__card {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

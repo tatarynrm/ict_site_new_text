@@ -1,0 +1,46 @@
+@import './styles/index.scss';
+
+#root {
+  position: relative;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // background-color: $prrimary-color;
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  &::-webkit-scrollbar {
+    width: 14px;
+    cursor: pointer;
+}
+&::-webkit-scrollbar-thumb {
+    background-color: #888; /* Цвет thumb */
+    border-radius: 4px; /* Закругление углов thumb */
+    cursor: pointer;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Цвет thumb при наведении */
+  }
+}
+.no-scroll {
+  overflow: hidden;
+}

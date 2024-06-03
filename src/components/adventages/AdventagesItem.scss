@@ -1,0 +1,21 @@
+.adventages__item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    height:156px;
+    cursor: context-menu;
+    .heading {
+        font-family: 'Benzin';
+        font-size: 24px;
+        line-height: 33px;
+    }
+    .text {
+        text-align: left;
+        font-family: 'Vis';
+        font-size: 18px;
+        line-height: 23px;
+        color: hsl(0, 0%, 30%);
+    }
+
+}

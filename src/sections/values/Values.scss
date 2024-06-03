@@ -1,0 +1,134 @@
+.values {
+    position: relative;
+    width: 100%;
+    height:500px; /* Высота геро-секции */
+    overflow: hidden; /* Скрытие части изображения, которая не помещается */
+    background-image: url('../../assets/images/values-photo.jpg');
+
+    background-size: cover; /* растянуть изображение на весь фон */
+    background-position: center; /* расположить изображение по центру */
+    background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+align-items: center;
+
+    &__inner {
+        color: white;
+
+        .values__info {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            gap: 100px;
+
+    h2 {
+        font-size: 78px;
+        font-family: 'Benzin';
+        line-height: 80px;
+    }
+    p {
+        font-family: 'Vis';
+        font-size: 18px;
+        line-height: 28px;
+        text-align: left;
+
+    }
+        }
+
+        .company__values{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            gap: 10px;
+        }
+        .company__values-title{
+          font-size: 24px;
+          font-family: 'Benzin';
+        }
+        .company__values-text{
+          font-size: 40px;
+          font-family: 'Benzin';
+
+        }
+
+        .company__values-block {
+            max-height: 400px;
+            overflow-y: auto;
+    
+            &::-webkit-scrollbar {
+                width: 6px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: #888; /* Цвет thumb */
+                border-radius: 5px; /* Закругление углов thumb */
+              }
+              &::-webkit-scrollbar-thumb:hover {
+                background-color: #555; /* Цвет thumb при наведении */
+              }
+        }
+     
+    }
+}
+
+
+
+@media screen and (max-width:960px) {
+    .values {
+        position: relative;
+        width: 100%;
+        height:500px; /* Высота геро-секции */
+        overflow: hidden; /* Скрытие части изображения, которая не помещается */
+        background-image: url('../../assets/images/values-photo.jpg');
+    
+        background-size: cover; /* растянуть изображение на весь фон */
+        background-position: center; /* расположить изображение по центру */
+        background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+        &__inner {
+            color: white;
+    // display: flex;
+            .values__info {
+               display: flex;
+               flex-direction: column;
+               gap: 0px;
+               text-align: left;
+               padding-bottom: 40px;
+               padding-top: 50px;
+        
+        h2 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 36px;
+            font-family: 'Benzin';
+            text-align: left;
+            align-items: left;
+            width: 100%;
+            line-height:40px;
+        }
+        p {
+            font-family: 'Vis';
+            font-size: 18px;
+            line-height: 28px;
+            text-align: left;
+            max-height: 400px;
+            overflow-y: auto;
+          
+    
+            &::-webkit-scrollbar {
+                width: 6px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: #888; /* Цвет thumb */
+                border-radius: 5px; /* Закругление углов thumb */
+              }
+              &::-webkit-scrollbar-thumb:hover {
+                background-color: #555; /* Цвет thumb при наведении */
+              }
+        }
+            }
+        }
+    }
+}

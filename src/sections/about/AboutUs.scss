@@ -1,0 +1,132 @@
+.about__us {
+    background-color:#0E0E0E;
+    color: white;
+
+    &-inner {
+        padding-top: 90px;
+        padding-bottom: 100px;
+    }
+
+    .about__us-top {
+        display: flex;
+        width: 100%;
+
+        h3{
+            font-family: 'Benzin';
+            font-size: 120px;
+        }
+
+        .about__us-p {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            margin-left: 40px;
+            gap: 50px;
+            justify-content: space-between;
+    
+        p {
+            font-size: 18px;
+            font-family: 'Vis';
+            line-height: 25px;
+        }
+
+        }
+
+    }
+
+    .about__us-bottom {
+        display: flex;
+        margin-top: 40px; 
+        gap: 40px;
+
+
+        &-left {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            h4{
+                font-family: 'Benzin';
+                font-size: 18px;
+                line-height: 23px;
+            }
+            p {
+                margin-top: 20px;
+                font-size: 18px;
+                font-family: 'Vis';
+            }
+            button {
+                border: none;
+                outline: none;
+                padding: 30px 60px;
+                background-color: #94BBE6;
+                font-family: 'Benzin';
+                font-size: 18px;
+                line-height: 25px;
+                cursor: pointer;
+            }
+        }
+
+        &-right {            
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+
+
+// MEDIA
+
+@media screen and (max-width:960px) {
+    .about__us{
+
+        &-inner {
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+
+            .about__us-top {
+            
+                    display: flex;
+                    flex-direction: column;
+             
+           
+                h3 {
+                    font-size: 60px;
+                }
+
+                .about__us-p {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0;
+                    margin-left: 0;
+                }
+            }
+            .about__us-bottom {
+                display: flex;
+                flex-direction: column;
+              
+                &-left {
+                    width: 100%;
+                }
+                &-right {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                        
+                    }
+                }
+            }
+
+        }
+
+
+    }
+
+
+    
+}

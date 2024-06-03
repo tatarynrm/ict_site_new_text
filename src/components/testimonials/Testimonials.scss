@@ -1,0 +1,148 @@
+.slider-container {
+    // max-width: 100%;
+    // width: 100%;
+    // margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 0px 30px;
+    padding: 0;
+
+
+
+    .slick-slider {
+       
+
+
+
+        .slick-list {
+        
+            display: flex;
+            align-items: center;
+          
+         
+
+
+            .slick-track {
+                // overflow: hidden;
+        
+                display: flex;
+                // gap: 100px;
+                justify-content: space-between;
+                align-items: center;
+                // text-align: center  ;
+                justify-content: center;
+                // padding: 20px;
+                width: 100%;
+
+
+
+
+                .slick-slide {
+                    // margin-right: 20px;
+               > div {
+                // width: 100%;
+               }
+                    padding: 10px;
+                    // width: 100%;
+                    cursor: pointer;
+                    // box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+              
+                    height: 300px;
+                    // height: auto;
+                    width: 200px;
+                   
+                    // overflow: hidden;
+                  
+                    overflow: hidden;
+                    overflow-y: scroll;
+                    &::-webkit-scrollbar {
+                        display: unset;
+                    }
+
+
+              
+                         
+                    .testimonial__item{
+                        box-shadow: rgba(37, 71, 134, 0.1) 0px 4px 12px;
+                        // border-radius: 20px;
+                        // background-color: red;
+                        padding: 20px;
+                       }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .slider-container {
+
+        margin: 0 auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    
+    
+    
+        .slick-slider {
+         
+    
+    
+    
+            .slick-list {
+
+    
+                .slick-track {
+                    // margin-left: 0px;
+                    // display: flex;
+
+                    justify-content: space-between;
+                    align-items: center;
+                    // text-align: center  ;
+                    justify-content: center;
+     
+    
+    
+    
+                    .slick-slide {
+    
+             
+                        padding: 10px;
+                        width: 100%;
+                        cursor: pointer;
+                        // box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                        box-shadow: rgba(37, 71, 134, 0.1) 0px 4px 12px;
+                       border-radius: 20px;
+                        height: 300px;
+                        // height: auto;
+                        width: 200px;
+                       
+                        // overflow: hidden;
+                        overflow-y: scroll;
+                        // overflow: hidden;
+    
+                    
+              
+                        .testimonial {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+ 
+    
+    
+                     
+                        }
+                        .testimonial__item{
+                            
+                            // background-color: red;
+                           }
+                        .testimonial-text {
+                            overflow-y: scroll;
+                            // overflow: hidden;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
