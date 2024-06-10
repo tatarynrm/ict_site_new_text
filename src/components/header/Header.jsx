@@ -1,14 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Header.scss";
 import logo from "../../assets/svg/logo.svg";
 import userIcon from "../../assets/svg/icons/user-icon.svg";
 import arrowIcon from "../../assets/svg/icons/arrow.svg";
 import CabinetTooltip from "../tooltips/CabinetTooltip";
 import burgerMenuSvg from "../../assets/png/burger__menu.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { header_menu } from "../../data/header_menu";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Tooltip } from "react-tooltip";
 const Header = ({toggleMenu}) => {
+  const [cabinetTrue,setCabinetTrue] = useState(false)
+  const location = useLocation()
+
+useEffect(()=>{
+  if (location.pathname === '/' ) {
+    console.log(true);
+    setCabinetTrue(true)
+  }else {
+    console.log(false);
+    setCabinetTrue(false)
+  }
+},[location])
   return (
     <header className="header">
       <div className="header__inner container">
@@ -52,9 +65,9 @@ const Header = ({toggleMenu}) => {
             </Link>
           </ul>
         </nav>
-        <a className="private__cabinet-wrapper" href="#cabinet">
+{cabinetTrue ?         <a className="private__cabinet-wrapper"  href={ "#cabinet" }>
         <div
-          data-tooltip-id="my-tooltip"
+          data-tooltip-id="header__tooltip"
           data-tooltip-delay-hide={1000}
           className="private__cabinet"
         >
@@ -66,10 +79,27 @@ const Header = ({toggleMenu}) => {
           </span>
      
         </div>
-        </a>
+        </a> :
+                <a className="private__cabinet-wrapper"  target="_blank" href={ "https://carriers.ict.lviv.ua/" }>
+                <div
+                  data-tooltip-id="header__tooltip"
+                  data-tooltip-delay-hide={1000}
+                  className="private__cabinet"
+                >
+                  
+                  <CabinetTooltip />
+                  <img src={userIcon} alt="user__icon" />
+                  <span>
+                    Особистий <br /> кабінет
+                  </span>
+             
+                </div>
+                </a>
+        }
                 <GiHamburgerMenu className="burger__menu" onClick={toggleMenu} fontSize={40}/>
         {/* <img onClick={toggleMenu} className="burger__menu" src={burgerMenuSvg} alt="burger__menu" /> */}
       </div>
+      <Tooltip id="header__tooltip" />
     </header>
   );
 };

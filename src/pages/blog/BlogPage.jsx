@@ -3,6 +3,7 @@ import "./BlogPage.scss";
 import { Helmet } from "react-helmet";
 import BlogItem from "../../components/blog/BlogItem";
 import { useLocation } from "react-router-dom";
+import useRecordVisit from "../../hooks/useRecordVisit";
 const BlogPage = () => {
   const blogs = [
     {
@@ -42,6 +43,7 @@ const BlogPage = () => {
       img: "https://zaxid.net/resources/photos/news/202403/1582686.jpg?20240401223605&fit=cover&w=1200&h=675&q=10",
     },
   ];
+  useRecordVisit('Блог')
   return (
     <div className="blog page">
       <Helmet>

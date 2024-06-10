@@ -6,6 +6,7 @@ import MapCard from "../MapCard/MapCard";
 import companyLogoSvg from "../../../assets/svg/logo.svg";
 const Region = ({ region, cardData, setCardData }) => {
   const [classDiv, setClassDiv] = useState("");
+
   const addClassDiv = () => {
     setClassDiv("active");
   };
@@ -16,7 +17,12 @@ const Region = ({ region, cardData, setCardData }) => {
   return (
     <g
       onClick={() => {
-        setCardData(region);
+        if (region.office) {
+          setCardData(region);
+        }else {
+          return null
+        }
+   
       }}
       data-tooltip-id="my-tooltip"
       data-tooltip-content="Натисніть для відображення  інформації"
@@ -61,7 +67,17 @@ const Region = ({ region, cardData, setCardData }) => {
         {region?.title}
       </text>
 
-      <Tooltip id="my-tooltip" />
+      <Tooltip id="my-tooltip">
+        <div>
+          <h3>Ознайомлення</h3>
+          <p>Для доступу на дану платформу <br /> зверніться до менеджера з <br /> яким проводили перевезення.</p>
+          <ul>
+            <li>1.Можливість перегляду перевезення</li>
+            <li>2.Контроль взаєморозрахунків онлайн</li>
+            <li>3.Актуальні завантаження</li>
+          </ul>
+        </div>
+      </Tooltip>
       <MapCard />
     </g>
   );

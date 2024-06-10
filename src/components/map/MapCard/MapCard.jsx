@@ -4,7 +4,9 @@ import { IoMdClose } from "react-icons/io";
 import companyLogo from "../../../assets/svg/logo.svg";
 import worker from "../../../assets/workers/snizhko.jpg";
 import dragan from "../../../assets/workers/dragan.jpg";
-const MapCard = ({ setCardData }) => {
+const MapCard = ({ setCardData, cardData }) => {
+  console.log("!!!!!!!!!!!!!", cardData);
+  const data = cardData;
   return (
     <div className="map__card">
       <div onClick={() => setCardData(null)} className="map__card-close">
@@ -15,75 +17,87 @@ const MapCard = ({ setCardData }) => {
       </div>
       <div className="map__card-address benzin">
         <h3>Адреса</h3>
-        <span className="city vis">Місто: м.Львів</span>
-        <span className="street vis">Вулиця: вул.Володимира Великого, 29</span>
-        <span className="post vis">Поштовий індекс: 79029</span>
+        <span className="city vis">м.{data?.address?.city}</span>
+        <span className="street vis">вул.{data?.address?.street}</span>
+        <span className="post vis">Поштовий індекс: {data?.address?.post_index}</span>
       </div>
+  {data?.address  &&
       <div className="map__card-info">
-        <div className="head">
-          <div className="head__img">
-            <div className="img">
-              <img src={worker} alt="head__img" />
+      {data?.dir &&
+        data?.dir.map((item, idx) => {
+          return (
+            <div key={idx} className="head">
+              <h3 style={{ textDecoration: "underline" }} className="benzin">
+                {item.position}
+              </h3>
+              <br />
+              <span className="vis name">{item.name}</span>{" "}
+              <br />
+              <span>{item.email}</span>
             </div>
-          </div>
-          <h3 className="benzin">Керівник відділення:</h3>
-          <span className="vis name">Сніжко Наталія</span>  <span>+38098943832</span>
-        </div>
+          );
+        })}
 
-        <div className="map__card-managers">
-          <h3 className="benzin">Менеджери</h3>
-        </div>
-        <div className="workers">
-          <div className="head">
-            <div className="head__img">
-              <div className="img">
-                <img src={dragan} alt="head__img" />
-              </div>
+      {data?.head_of_department &&
+        data?.head_of_department.map((item, idx) => {
+          return (
+            <div key={idx} className="head__office">
+              <h3 style={{ textDecoration: "underline" }} className="benzin">
+                {item.position}
+              </h3>
+              <br />
+              <span className="vis name">{item.name}</span>{" "}
+              <br />
+              <span>{item.email}</span>
             </div>
-            <h3 className="benzin">
-              Менеджер з транспортно-експедиційної діяльності:
-            </h3>
-            <span className="vis name">Петро Листвак</span>
-            <span>+380989578538</span>
-          </div>
-          <div className="head">
-            <div className="head__img">
-              <div className="img">
-                <img src={dragan} alt="head__img" />
-              </div>
+          );
+        })}
+      {data?.ukraine && (
+        <h3 style={{ textDecoration: "underline" }} className="benzin">
+          Відділ перевезень по Україні
+        </h3>
+      )}
+      {data?.ukraine &&
+        data?.ukraine?.map((item, idx) => {
+          return (
+            <div key={idx} className="head__office">
+              <span className="vis name">{item.name}</span> <br />{" "}
+              <span>{item.email}</span>
             </div>
-            <h3 className="benzin">
-              Менеджер з транспортно-експедиційної діяльності:
-            </h3>
-            <span className="vis name">Петро Листвак</span>
-            <span>+380989578538</span>
-          </div>
-          <div className="head">
-            <div className="head__img">
-              <div className="img">
-                <img src={dragan} alt="head__img" />
-              </div>
+          );
+        })}
+      {data?.europe && (
+        <h3 style={{ textDecoration: "underline" }} className="benzin">
+          Відділ міжнародних перевезень
+        </h3>
+      )}
+      {data?.europe &&
+        data?.europe?.map((item, idx) => {
+          return (
+            <div key={idx} className="head__office">
+              <span className="vis name">{item.name}</span> <br />{" "}
+              <span>{item.email}</span>
             </div>
-            <h3 className="benzin">
-              Менеджер з транспортно-експедиційної діяльності:
-            </h3>
-            <span className="vis name">Петро Листвак</span>
-            <span>+380989578538</span>
-          </div>
-          <div className="head">
-            <div className="head__img">
-              <div className="img">
-                <img src={dragan} alt="head__img" />
-              </div>
+          );
+        })}
+
+        {data?.workers?.length > 0  && <h3 style={{ textDecoration: "underline" }} className="benzin">
+          Менеджери
+        </h3>}
+      {data?.workers &&
+        data?.workers?.map((item, idx) => {
+          return (
+            <div key={idx} className="head__office">
+              <span className="vis name">{item.name}</span> <br />{" "}
+              <span>{item.email}</span>
             </div>
-            <h3 className="benzin">
-              Менеджер з транспортно-експедиційної діяльності:
-            </h3>
-            <span className="vis name">Петро Листвак</span>
-            <span>+380989578538</span>
-          </div>
-        </div>
-      </div>
+          );
+        })}
+
+
+    </div>
+  }
+
     </div>
   );
 };

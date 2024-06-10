@@ -10,10 +10,16 @@ import {
 import axios from "axios";
 import Map from "../../components/map/UkraineMap/Map";
 import MapCard from "../../components/map/MapCard/MapCard";
+import useRecordVisit from "../../hooks/useRecordVisit";
 const geoUrl =
   "https://raw.githubusercontent.com/leakyMirror/map-of-europe/master/TopoJSON/europe.topojson";
 const Contacts = () => {
 const [cardData,setCardData] = useState(null)
+useRecordVisit('Контакти')
+console.log('CARDDATA',cardData);
+useEffect(()=>{
+
+},[cardData])
   return (
     <div className="contacts page">
       
@@ -24,7 +30,7 @@ const [cardData,setCardData] = useState(null)
         </div>
         <Map setCardData={setCardData} cardData={cardData} />
       </div>
-      {cardData && <MapCard setCardData={setCardData}/>}
+      {cardData ? <MapCard cardData={cardData} setCardData={setCardData}/> : null}
     </div>
   );
 };

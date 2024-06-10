@@ -8,6 +8,19 @@
         background-repeat: no-repeat;
     }
 
+    .container__service-link{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-color: rgb(79, 79, 221);
+        height: 40px;
+        a {
+            font-family: 'VIS';
+            font-size: 20px;
+        }
+    }
     &__inner {
         padding-top: 240px;
         h1 {
@@ -55,14 +68,15 @@
             display: block;
             font-family:'Vis';
             font-size: 24px;
-            padding: 20px;
+            // padding: 20px;
             line-height: 1.2;
             white-space: pre-line;
             width: 100%;
             margin: 0 auto;
-            background-color: rgba(18, 44, 66,0.3);
+            background-color: rgba(18, 44, 66,0.1);
             transform: skewX(-10deg);
-            text-align: left;              
+            text-align: left;    
+            // width: 80%;          
            
         }
 &-title {
@@ -77,7 +91,7 @@
         top: 0;
         right: 0;
         color: hsl(0, 0%, 35%);
-        font-family: "Benzin";
+        font-family: "Vis";
         font-weight: 400;
         font-size: 24px;
         line-height: 30px;

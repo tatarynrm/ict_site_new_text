@@ -8,6 +8,8 @@ import { useLocation } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
 import { Helmet } from "react-helmet";
 import { header_menu } from "../../data/header_menu";
+import useRecordVisit from "../../hooks/useRecordVisit";
+import { FaExternalLinkAlt } from "react-icons/fa";
 const container = {
   hidden: { opacity: 1, scale: 0 },
   visible: {
@@ -28,9 +30,9 @@ const lol = {
   },
 };
 const ServicePage = ({ item }) => {
+  useRecordVisit(item.link)
   const [activeInfo,setActiveInfo] = useState(false)
   const location = useLocation();
-
   const handleActiveChange =(e)=> {
     e.preventDefault()
     setActiveInfo(val => !val)
@@ -93,14 +95,17 @@ const ServicePage = ({ item }) => {
             repeat={Infinity}
             className="service__page-animation-desc"
           /> */}
-          <h3       data-aos={location ? "fade-right" : "fade-right"}
+          <h3      
+          style={{textAlign:'justify'}}
+          data-aos={location ? "fade-right" : "fade-right"}
                       data-aos-offset="200"
                       data-aos-delay="50"
                       data-aos-duration="2000"
                       data-aos-easing="ease-in-out"
                       data-aos-mirror="true"
                       data-aos-once="true"
-          className="service__page-animation-desc">{item.desc}</h3>
+          className="service__page-animation-desc ">{item.desc}</h3>
+        
           {/* <p 
                data-aos={location ? "fade-left" : "fade-left"}
                data-aos-offset="200"
@@ -110,7 +115,12 @@ const ServicePage = ({ item }) => {
           >{item.desc}</p> */}
         </div>
       </div>
+      {item?.external_link &&  <div className="container__service-link">
+
+        <a target="_blank" href={item?.external_link}>Посилання на сервіс <FaExternalLinkAlt/></a>
+      </div> }
       <div className="service__description container">
+     
         <button onClick={handleActiveChange}>{activeInfo ? 'ПРИХОВАТИ ІНФОРМАЦІЮ' : `ДЕТАЛЬНА ІНФОРМАЦІЯ ПРО ${item.title}`}</button>
 {activeInfo &&         <article
           data-aos="fade-down"
@@ -119,6 +129,7 @@ const ServicePage = ({ item }) => {
           data-aos-delay="50"
           data-aos-duration="1000"
           className={`article ${activeInfo ? 'active' :''}`}
+          style={{textAlign:'justify'}}
         >
           {item?.info}
         </article>}
@@ -130,12 +141,14 @@ const ServicePage = ({ item }) => {
             OUR <br /> ADVANTAGES
           </span>
         </div>
+      
       </div>
       <div className="stages__work container">
         <div className="stages__work-inner">
           {item.stages.map((val, idx) => {
             return (
               <div
+      
                 data-aos="fade-up"
                 data-aos-offset="200"
                 data-aos-delay="50"
@@ -144,7 +157,8 @@ const ServicePage = ({ item }) => {
                 data-aos-mirror="true"
                 data-aos-once="false"
                 key={idx}
-                className="stage__item"
+                className="stage__item  "
+            
               >
                 <div className="stage__item-top">
                   <div className="little__img">

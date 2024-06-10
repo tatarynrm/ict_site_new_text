@@ -5,10 +5,10 @@ import { services_data } from "../../data/services__data";
 
 const Services = () => {
   const data = [
-    { data: "20+", title: "Років досвіду" },
+    { data: "25+", title: "Років досвіду" },
     { data: "3000+", title: "Перевезень в місяць" },
     { data: "400+", title: "Задоволених клієнтів" },
-    { data: "300k", title: "Перевезень в рік" },
+    { data: "40k", title: "Перевезень в рік" },
   ];
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 useEffect(()=>{

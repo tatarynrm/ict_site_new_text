@@ -16,23 +16,22 @@ import AboutUsPage from "./pages/about/AboutUsPage";
 import { FaArrowCircleUp } from "react-icons/fa";
 import NotFound from "./pages/not-found/NotFound";
 import BurgerMenu from "./components/burger-menu/BurgerMenu";
-
+import axios from "axios";
 
 function App() {
   const location = useLocation();
   const [visible, setVisible] = useState(false);
-  const [burger,setBurger] = useState(false)
-
+  const [burger, setBurger] = useState(false);
   const toggleMenu = () => {
-    setBurger(val => !val);
+    setBurger((val) => !val);
     if (!burger) {
       // При открытии меню - добавляем класс для блокировки прокрутки
-    console.log(true);
-      document.body.classList.add('no-scroll');
+  
+      document.body.classList.add("no-scroll");
     } else {
       // При закрытии меню - удаляем класс
-      document.body.classList.remove('no-scroll');
-      setBurger(false)
+      document.body.classList.remove("no-scroll");
+      setBurger(false);
     }
   };
   const scrollWidth = window.innerWidth;
@@ -63,13 +62,14 @@ function App() {
   useEffect(() => {
     AOS.init();
   }, []);
-  useEffect(() => {}, [scrollWidth,document.body.classList]);
+  useEffect(() => {}, [scrollWidth, document.body.classList]);
+
+
+
+
   return (
     <>
-
-    
-      <Header  toggleMenu={toggleMenu}/>
-
+      <Header toggleMenu={toggleMenu} />
 
       <Routes>
         <Route exact path="/" element={<Main />} />
@@ -94,7 +94,7 @@ function App() {
 
       <Footer />
 
-  {burger &&     <BurgerMenu setBurger={setBurger} toggleMenu={toggleMenu}/>}
+      {burger && <BurgerMenu setBurger={setBurger} toggleMenu={toggleMenu} />}
 
       {visible & (scrollWidth > 650) ? (
         <button className="scroll_to_top_btn pulse">

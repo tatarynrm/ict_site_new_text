@@ -3,7 +3,7 @@ import { Tooltip } from "react-tooltip";
 const CabinetTooltip = () => {
   return (
     <>
-      <Tooltip id="my-tooltip">
+      <Tooltip id="header__tooltip">
         <div>
           <h3>Ознайомлення</h3>
           <p>Для доступу на дану платформу <br /> зверніться до менеджера з <br /> яким проводили перевезення.</p>

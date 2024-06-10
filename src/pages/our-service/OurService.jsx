@@ -4,8 +4,10 @@ import ServiceCard from '../../components/service/ServiceCard'
 import { services_data } from '../../data/services__data'
 import { Helmet } from 'react-helmet'
 import FreeConsultation from '../../components/free-consultation/FreeConsultation'
+import useRecordVisit from '../../hooks/useRecordVisit'
 
 const OurService = () => {
+  useRecordVisit('Усі послуги')
   return (
     <div className='our__service'>
             <Helmet>

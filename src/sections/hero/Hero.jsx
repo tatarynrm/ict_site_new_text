@@ -22,7 +22,6 @@ const Hero = () => {
   const innerWidth = window.innerWidth;
   useEffect(() => {}, [innerWidth]);
 
-  console.log(innerWidth);
   useEffect(() => {
     setTimeout(() => {
       setVis(innerWidth);
@@ -50,14 +49,14 @@ const Hero = () => {
         <div className="hero__about">
           <div className="hero__about-left">
             <p>
-              Дізнайтесь вартість та термін доставки вантажу відповівши на
-              декілька запитань
+            Дізнайтеся вартість та термін доставки вантажу, відповівши на декілька запитань.
             </p>
-            <a href="#free__consultation-section">
+            <a style={{zIndex:'9999'}} href="#free__consultation-section">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 href="#"
+              
               >
                 ДІЗНАТИСЬ
               </motion.button>

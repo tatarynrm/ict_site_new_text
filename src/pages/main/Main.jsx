@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Main.scss";
 import Hero from "../../sections/hero/Hero";
 import AboutUs from "../../sections/about/AboutUs";
@@ -14,7 +14,10 @@ import Carousel from "../../components/carousel/Carousel";
 import { Helmet } from "react-helmet";
 import Rating from "../../sections/rating/Rating";
 import Testimonials from "../../components/testimonials/Testimonials";
+import axios from "axios";
+import useRecordVisit from "../../hooks/useRecordVisit";
 const Main = () => {
+  useRecordVisit('Головна')
   return (
     <div className="main">
       <Helmet>
