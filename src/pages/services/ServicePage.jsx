@@ -121,7 +121,7 @@ const ServicePage = ({ item }) => {
       </div> }
       <div className="service__description container">
      
-        <button onClick={handleActiveChange}>{activeInfo ? 'ПРИХОВАТИ ІНФОРМАЦІЮ' : `ДЕТАЛЬНА ІНФОРМАЦІЯ ПРО ${item.title}`}</button>
+        <button onClick={handleActiveChange}>{activeInfo ? 'ПРИХОВАТИ ІНФОРМАЦІЮ' : `ДЕТАЛЬНА ІНФОРМАЦІЯ  ${item.title}`}</button>
 {activeInfo &&         <article
           data-aos="fade-down"
           data-aos-once="true"

@@ -63,7 +63,7 @@ const Hero = () => {
             </a>
           </div>
           <div className="hero__about-right">
-            <span>Листайте вниз</span>
+            {/* <span>Листайте вниз</span> */}
           </div>
         </div>
       </div>

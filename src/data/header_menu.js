@@ -7,6 +7,6 @@ export const header_menu = [
     link: "/adr-cargo",
   },
   { title: "Організація перевезень збірних вантажів", link: "/collective-cargo" },
-  { title: "Перевезення морсьикими контейнерами", link: "/container-cargo" },
+  { title: "Перевезення морськими контейнерами", link: "/container-cargo" },
   { title: "Оренда контейнерів", link: "/container-storage" },
 ];
