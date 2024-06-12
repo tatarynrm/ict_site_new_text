@@ -10,4 +10,3 @@ export const carrier__data = [
     {id:8,text:`Отримання коректних документів та рахунку від перевізника`,img:img},
     {id:9,text:`Оплата`,img:img},
 ]
-r
