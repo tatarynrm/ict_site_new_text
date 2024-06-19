@@ -4,12 +4,21 @@ import epicentrLogo from "../../assets/images/clients-logo/epicentr.png";
 import nestleLogo from "../../assets/images/clients-logo/nestle.png";
 import getmanLogo from "../../assets/images/clients-logo/getman.png";
 import carlsbergLogo from "../../assets/images/clients-logo/carlsberg.png";
+
+
+
+// TEST
+// import carlsbergLogo from "../../assets/images/clients-test-logo/carlsberg.png";
+
+// TEST
+
 import artaLogo from "../../assets/images/clients-logo/arta.png";
 import idsLogo from "../../assets/images/clients-logo/ids.png";
 import pershaLogo from "../../assets/images/clients-logo/persha.png";
 import metinvestLogo from "../../assets/images/clients-logo/metinvest.png";
 import mondelizLogo from "../../assets/images/clients-logo/mondeliz.png";
 import omegaLogo from "../../assets/images/clients-logo/omega.png";
+
 import Marquee from "react-fast-marquee";
 
 const OurClients = () => {

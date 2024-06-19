@@ -42,7 +42,8 @@ const Map = ({ cardData, setCardData }) => {
               (alarmRegion) => alarmRegion.id === region.id
             );
 
-            !alarmRegion ? (region.fill = "#008080") : (region.fill = "red");
+            // !alarmRegion ? (region.fill = "#008080") : (region.fill = "red");
+            !alarmRegion ? (region.fill = "#207180") : (region.fill = "red");
 
             return (
               <Region

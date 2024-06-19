@@ -17,8 +17,8 @@ const MapCard = ({ setCardData, cardData }) => {
       </div>
       <div className="map__card-address benzin">
         <h3>Адреса</h3>
-        <span className="city vis">м.{data?.address?.city}</span>
-        <span className="street vis">вул.{data?.address?.street}</span>
+        <span className="street vis">вул. {data?.address?.street}</span>
+        <span className="city vis">м. {data?.address?.city}</span>
         <span className="post vis">Поштовий індекс: {data?.address?.post_index}</span>
       </div>
   {data?.address  &&

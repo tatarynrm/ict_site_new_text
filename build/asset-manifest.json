@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.462af8d5.css",
-    "main.js": "/static/js/main.6611b2bf.js",
+    "main.css": "/static/css/main.71b5f722.css",
+    "main.js": "/static/js/main.20105a85.js",
     "static/media/video.mp4": "/static/media/video.aaa747980087245ed98c.mp4",
     "static/media/container.png": "/static/media/container.0b831609da8f5444ca2a.png",
     "static/media/container-storage.png": "/static/media/container-storage.cd5f9797ac9db992f8d8.png",
@@ -18,6 +18,7 @@
     "static/media/zbir.jpg": "/static/media/zbir.a45ff47833641ef73df3.jpg",
     "static/media/container.jpg": "/static/media/container.6c8f95fcda6f34e50370.jpg",
     "static/media/adr.jpg": "/static/media/adr.79e609438282bb83d6e0.jpg",
+    "static/media/test3.jpg": "/static/media/test3.14c61f45e85602bf076e.jpg",
     "static/media/ukraine.jpg": "/static/media/ukraine.0c1bc004bca13f52e782.jpg",
     "static/media/orenda.jpg": "/static/media/orenda.53d2b5d5eed1f5968e79.jpg",
     "static/media/VisueltPro-Regular.ttf": "/static/media/VisueltPro-Regular.129147361723c45f64f9.ttf",
@@ -39,11 +40,11 @@
     "index.html": "/index.html",
     "static/media/facebook.svg": "/static/media/facebook.da6c4990e2a091d16dbf56f4f31234ce.svg",
     "static/media/arrow.svg": "/static/media/arrow.f66936cddfda47f51816f5a6fda660bf.svg",
-    "main.462af8d5.css.map": "/static/css/main.462af8d5.css.map",
-    "main.6611b2bf.js.map": "/static/js/main.6611b2bf.js.map"
+    "main.71b5f722.css.map": "/static/css/main.71b5f722.css.map",
+    "main.20105a85.js.map": "/static/js/main.20105a85.js.map"
   },
   "entrypoints": [
-    "static/css/main.462af8d5.css",
-    "static/js/main.6611b2bf.js"
+    "static/css/main.71b5f722.css",
+    "static/js/main.20105a85.js"
   ]
 }

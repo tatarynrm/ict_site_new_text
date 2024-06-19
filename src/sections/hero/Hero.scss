@@ -3,7 +3,8 @@
     width: 100%;
     height:100vh; /* Высота геро-секции */
     overflow: hidden; /* Скрытие части изображения, которая не помещается */
-    background-image: url('../../assets/images/hero.jpg');
+    // background-image: url('../../assets/images/hero.jpg');
+    background-image: url('../../assets/images/main-test-photos/test3.jpg');
 
     background-size: cover; /* растянуть изображение на весь фон */
     background-position: center; /* расположить изображение по центру */
@@ -76,6 +77,8 @@ video {
 
 
 
+
+
   &-left{
     width: 50%;
     display: flex;
@@ -90,8 +93,15 @@ video {
       font-weight: 400;
       color: #FFFFFF;
       // width: 240px;
-      text-align: left;
-      color: hsl(0, 0%, 80%);
+      // text-align: left;
+      background-color: rgba($color: #000000, $alpha: .6);
+      padding: 10px;
+      border-radius: 3px;
+      // color: hsl(0, 0%, 80%);
+      // text-align: justify;
+      // color: black;
+      // font-size: 24px;
+
     }
 
     button {
