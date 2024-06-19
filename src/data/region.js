@@ -39,7 +39,7 @@ export const regions = [
 
     address: {
       city: `Луцьк`,
-      street: "пр-т Перемоги, 15, оф. 36",
+      street: "проспект Перемоги, 15, офіс 36",
       post_index: "43000",
     },
     workers: [
@@ -69,7 +69,7 @@ export const regions = [
 
     address: {
       city: `Дніпро`,
-      street: "Теплична,буд. 27-Б",
+      street: "Теплична, буд. 27-Б",
       post_index: "79029",
     },
     workers: [
@@ -319,7 +319,7 @@ export const regions = [
 
     address: {
       city: `Рівне`,
-      street: "Кн.Ольги, 5, оф.402",
+      street: "Княгині Ольги, 5, офіс 402",
       post_index: "33014",
     },
     workers: [
@@ -349,7 +349,7 @@ export const regions = [
 
     address: {
       city: `Суми`,
-      street: "Г.Кондратьєва, 25, оф.609",
+      street: "Герасима Кондратьєва, 25 офіс 609",
       post_index: "40000",
     },
     workers: [

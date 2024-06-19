@@ -49,7 +49,7 @@ const Hero = () => {
         <div className="hero__about">
           <div className="hero__about-left">
             <p>
-            Дізнайтеся вартість та термін доставки вантажу, відповівши на декілька запитань.
+            Для розрахунку вартості та терміну доставки вантажу просимо заповнити форму.
             </p>
             <a style={{zIndex:'9999'}} href="#free__consultation-section">
               <motion.button
