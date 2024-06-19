@@ -24,7 +24,7 @@ export const regions = [
       {
         name: "Чернега Анна Василівна",
         email: "ac@ict.lviv.ua",
-        position: "Начальник Тернопільського відділення",
+        position: "Начальник Вінницького відділення",
       },
     ],
   },
@@ -54,7 +54,7 @@ export const regions = [
       {
         name: "Карпюк Артур Ігорович",
         email: "vk@ict.lviv.ua",
-        position: "Начальник Тернопільського відділення",
+        position: "Начальник Волинського відділення",
       },
     ],
   },
@@ -217,7 +217,7 @@ export const regions = [
     address: {
       city: `Місто: м.Львів`,
       street: "Володимира Великого, 29",
-      post_index: "79029",
+      post_index: "79026",
     },
     workers: [],
     dir: [
@@ -369,7 +369,7 @@ export const regions = [
       {
         name: "Сніжко Наталія Михайлівна",
         email: "nn@ict.lviv.ua",
-        position: "Начальник Тернопільського відділення",
+        position: "Начальник Сумського відділення",
       },
     ],
   },
