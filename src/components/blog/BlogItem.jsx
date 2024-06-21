@@ -7,7 +7,9 @@ const BlogItem = ({item}) => {
         <div className="blog__img">
             <img src={item.img ?  item.img : blogImg } alt="blog__img-item" />
         </div>
+        
         <div className="blog__info">
+        <span className='blog__date' style={{marginBottom:'10px'}}>{item?.date ? 'Дата публікації: ' : ''} {item?.date ? item.date : ''}</span>
             <h4 className='blog__title'>{item.title}</h4>
             <p className='blog__short-info'>{item.desc}</p>
             <button className='blog__button'>Дізнатись більше</button>

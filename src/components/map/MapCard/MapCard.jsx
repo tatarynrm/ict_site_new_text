@@ -5,8 +5,9 @@ import companyLogo from "../../../assets/svg/logo.svg";
 import worker from "../../../assets/workers/snizhko.jpg";
 import dragan from "../../../assets/workers/dragan.jpg";
 const MapCard = ({ setCardData, cardData }) => {
-  console.log("!!!!!!!!!!!!!", cardData);
+
   const data = cardData;
+  console.log(data);
   return (
     <div className="map__card">
       <div onClick={() => setCardData(null)} className="map__card-close">
@@ -37,6 +38,16 @@ const MapCard = ({ setCardData, cardData }) => {
             </div>
           );
         })}
+
+{data?.office_contact && 
+        data?.office_contact?.map((item, idx) => {
+          return (
+          <div key={idx}><a style={{textDecoration:'underline'}} href={`tel:${item.office_tel}`}>{item.office_tel}</a></div>
+          );
+        })} 
+
+
+
 
       {data?.head_of_department &&
         data?.head_of_department.map((item, idx) => {
