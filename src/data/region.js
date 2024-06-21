@@ -25,6 +25,7 @@ export const regions = [
         name: "Чернега Анна Василівна",
         email: "ac@ict.lviv.ua",
         position: "Начальник Вінницького відділення",
+        tel:'+380503715513'
       },
     ],
   },
@@ -55,6 +56,7 @@ export const regions = [
         name: "Карпюк Артур Ігорович",
         email: "ak@ict.lviv.ua",
         position: "Начальник Волинського відділення",
+        tel:'+380504318077'
       },
     ],
   },
@@ -89,6 +91,7 @@ export const regions = [
         name: "Мельник Тетяна Валеріївна",
         email: "tm@ict.lviv.ua",
         position: "Начальник Дніпровського відділення",
+        tel:'+380504307893'
       },
     ],
   },
@@ -135,6 +138,7 @@ export const regions = [
         name: "Аршулік Марія Володимирівна",
         email: "amv@ict.lviv.ua",
         position: "Начальник Закарпатського відділення",
+        tel:'+380504306994'
       },
     ],
   },
@@ -178,6 +182,7 @@ export const regions = [
         name: "Гладій Людмила Олександрівна",
         email: "lg@ict.lviv.ua",
         position: "Начальник Івано-Франківського відділення",
+        tel:'+380503707902'
       },
     ],
   },
@@ -197,7 +202,7 @@ export const regions = [
     workers: [],
     dir: [
       {
-        name: "Околовськтй Валерій Олексійович",
+        name: "Околовський Валерій Олексійович",
         email: "vo@ict.kiev.ua",
         position: "Генеральний директор",
       },
@@ -238,6 +243,9 @@ export const regions = [
       street: "Володимира Великого, 29",
       post_index: "79026",
     },
+    office_contact:[
+      {office_tel:'+380322550161'}
+    ],
     workers: [],
     dir: [
       {
@@ -246,11 +254,20 @@ export const regions = [
         position: "Директор",
       },
     ],
+    head_of_commercial: [
+      {
+        name: "Скочиляс Віктор Володимирович",
+        email: "svv@ict.lviv.ua",
+        position: "Заступник директора з  комерційної роботи",
+        tel:'+380503703781'
+      },
+    ],
     head_of_department: [
       {
         name: "Рубель Олександр Михайлович",
         email: "sr@ict.lviv.ua",
         position: "Заступник директора з перевезень по Україні",
+        tel:'+380503703778'
       },
     ],
     ukraine: [
@@ -354,6 +371,7 @@ export const regions = [
         name: "Кундеус Віктор Устимович",
         email: "vk@ict.lviv.ua",
         position: "Начальник Рівненського відділення",
+        tel:'+380503703851'
       },
     ],
   },
@@ -389,6 +407,7 @@ export const regions = [
         name: "Сніжко Наталія Михайлівна",
         email: "nn@ict.lviv.ua",
         position: "Начальник Сумського відділення",
+        tel:'+380504308394'
       },
     ],
   },
@@ -424,6 +443,7 @@ export const regions = [
         name: "Соломенцева Зоряна Юріївна",
         email: "szu@ict.lviv.ua",
         position: "Начальник Тернопільського відділення",
+        tel:'+380504307884'
       },
     ],
   },
@@ -444,11 +464,12 @@ export const regions = [
 
     ],
 
-    head_of_department: [
+    workers: [
       {
         name: "Копенко Лілія Олександрівна",
         email: "ictl@ukrpost.ua",
-        position: "Начальник Харківського відділення",
+        position: "Менеджер з транспортно-експедиторської діяльності",
+        tel:'+380503342535'
       },
     ],
 
@@ -502,12 +523,12 @@ export const regions = [
         position: "Менеджер з транспортно-експедиторської діяльності",
       },
     ],
-
     head_of_department: [
       {
         name: "Копилець Павло Миколайович",
         email: "kpn@ict.ck.ua",
         position: "Начальник Черкаського відділення",
+        tel:'+380674702144'
       },
     ],
   

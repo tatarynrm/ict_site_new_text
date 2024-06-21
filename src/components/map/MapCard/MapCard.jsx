@@ -49,6 +49,22 @@ const MapCard = ({ setCardData, cardData }) => {
 
 
 
+      {data?.head_of_commercial &&
+        data?.head_of_commercial.map((item, idx) => {
+          return (
+            <div key={idx} className="head__office">
+              <h3 style={{ textDecoration: "underline" }} className="benzin">
+                {item.position}
+              </h3>
+              <br />
+              <span className="vis name">{item.name}</span>{" "}
+              <br />
+              <span>{item.email}</span>
+              <br />
+             {item.tel && <a href={`tel:${item.tel}`}>{item.tel}</a> }
+            </div>
+          );
+        })}
       {data?.head_of_department &&
         data?.head_of_department.map((item, idx) => {
           return (
@@ -60,6 +76,8 @@ const MapCard = ({ setCardData, cardData }) => {
               <span className="vis name">{item.name}</span>{" "}
               <br />
               <span>{item.email}</span>
+              <br />
+              {item.tel && <a href={`tel:${item.tel}`}>{item.tel}</a> }
             </div>
           );
         })}
