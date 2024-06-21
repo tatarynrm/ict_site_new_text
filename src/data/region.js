@@ -460,14 +460,20 @@ export const regions = [
       street: "Алчевських, 27Б, офіс 16 ",
       post_index: "61002",
     },
-    workers: [
+    // workers: [
 
-    ],
+    // ],
 
     workers: [
       {
         name: "Копенко Лілія Олександрівна",
-        email: "ictl@ukrpost.ua",
+        email: "I.kopenko56@gmail.com",
+        position: "Менеджер з транспортно-експедиторської діяльності",
+        tel:'+380503342535'
+      },
+      {
+        name: "Ванжа Тетяна Олександрівна",
+        email: "t.vanzha@gmail.com",
         position: "Менеджер з транспортно-експедиторської діяльності",
         tel:'+380503342535'
       },
