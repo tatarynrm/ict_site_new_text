@@ -244,7 +244,7 @@ export const regions = [
       post_index: "79026",
     },
     office_contact:[
-      {office_tel:'+380322550161'}
+      {office_tel:'+380-(322)-550-161'}
     ],
     workers: [],
     dir: [
@@ -590,8 +590,8 @@ export const regions = [
       },
     ],
     office_contact:[
-      {office_tel:'+380442462280'},
-      {office_tel:'+380442462270'},
+      {office_tel:'+380-(44)-246-22-80'},
+      {office_tel:'+380-(44)-246-22-70'},
     ],
     head_of_department: [
       {
