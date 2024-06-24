@@ -48,11 +48,11 @@ const Footer = () => {
                 <h3 className="contacts__title">Комерційний відділ</h3>
       
                 <span className="commercial__number">
-                  <a href="tel:+380503703781">+380 50-370-37-81</a>
+                  <a href="tel:+380503703781">+380-(50)-370-37-81</a>
                 </span>
                 <br /><br />
                 <span className="commercial__number">
-                  <a href="tel:+380504308661">+380 50-430-86-61</a>
+                  <a href="tel:+380504308661">+380-(50)-430-86-61</a>
                 </span>
               </div>
               <div className="clients">
@@ -60,7 +60,7 @@ const Footer = () => {
                   Відділ по роботі з клієнтами
                 </h3>
                 <span className="clients__number">
-                  <a href="tel:+380503348200">+380 50-334-82-00</a>
+                  <a href="tel:+380503348200">+380-(50)-334-82-00</a>
                 </span>
               </div>
             </div>
@@ -75,7 +75,7 @@ const Footer = () => {
               79026, м.Львів, вул. Володимира Великого, 29
             </p>
             <p className="email">
-              Email: <br /><br /> <a style={{color:'lightblue'}} href="mailto:info@ict.lviv.ua">info@ict.lviv.ua</a>
+              Email: <a style={{color:'lightblue'}} href="mailto:info@ict.lviv.ua">info@ict.lviv.ua</a>
             </p>
           </div>
         </div>

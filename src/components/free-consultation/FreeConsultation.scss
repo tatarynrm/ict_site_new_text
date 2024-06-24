@@ -181,3 +181,33 @@ textarea::-moz-scrollbar-track {
        
     }
 }
+@media screen and (max-width:580px) {
+    .free__consultation-block{
+        display: flex;
+        flex-direction: column;
+    }
+    .free__consultation-block .left h3 {
+        max-width: 90%;
+        font-size: 60px;
+       
+    }
+}
+@media screen and (max-width:576px) {
+    .free__consultation-block{
+        display: flex;
+        flex-direction: column;
+    }
+    .free__consultation-block .left h3 {
+        max-width: 60%;
+        font-size: 30px;
+       
+    }
+
+    .free__consultation-form{
+        .phone{
+            input {
+                width: 70%;
+            }
+        }
+    }
+}
