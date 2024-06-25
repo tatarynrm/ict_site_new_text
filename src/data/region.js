@@ -359,11 +359,11 @@ export const regions = [
       post_index: "33014",
     },
     workers: [
-      {
-        name: "Шевчук Олександр Миколайович",
-        email: "im@ict.lviv.ua",
-        position: "Менеджер з транспортно-експедиторської діяльності",
-      },
+      // {
+      //   name: "Шевчук Олександр Миколайович",
+      //   email: "im@ict.lviv.ua",
+      //   position: "Менеджер з транспортно-експедиторської діяльності",
+      // },
     ],
 
     head_of_department: [

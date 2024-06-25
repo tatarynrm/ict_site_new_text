@@ -35,7 +35,7 @@ const MapCard = ({ setCardData, cardData }) => {
                   <br />
                   <span className="vis name">{item.name}</span>{" "}
                   <br />
-                  <span>{item.email}</span>
+                  <a href={`mailto:${item.email}`}>{item.email}</a>
                 </div>
               );
             })}
@@ -55,7 +55,7 @@ const MapCard = ({ setCardData, cardData }) => {
                   <br />
                   <span className="vis name">{item.name}</span>{" "}
                   <br />
-                  <span>{item.email}</span>
+                  <a href={`mailto:${item.email}`}>{item.email}</a>
                   <br />
                   {item.tel && <a href={`tel:${item.tel}`}>{formatPhoneNumber(item.tel)}</a>}
                 </div>
@@ -71,7 +71,7 @@ const MapCard = ({ setCardData, cardData }) => {
                   <br />
                   <span className="vis name">{item.name}</span>{" "}
                   <br />
-                  <span>{item.email}</span>
+                  <a href={`mailto:${item.email}`}>{item.email}</a>
                   <br />
                   {item.tel && <a href={`tel:${item.tel}`}>{formatPhoneNumber(item.tel)}</a>}
                 </div>
@@ -87,7 +87,7 @@ const MapCard = ({ setCardData, cardData }) => {
               return (
                 <div key={idx} className="head__office">
                   <span className="vis name">{item.name}</span> <br />{" "}
-                  <span>{item.email}</span>
+                  <a href={`mailto:${item.email}`}>{item.email}</a>
                 </div>
               );
             })}
@@ -101,7 +101,7 @@ const MapCard = ({ setCardData, cardData }) => {
               return (
                 <div key={idx} className="head__office">
                   <span className="vis name">{item.name}</span> <br />{" "}
-                  <span>{item.email}</span>
+                  <a href={`mailto:${item.email}`}>{item.email}</a>
                 </div>
               );
             })}
@@ -114,7 +114,7 @@ const MapCard = ({ setCardData, cardData }) => {
               return (
                 <div key={idx} className="head__office">
                   <span className="vis name">{item.name}</span> <br />{" "}
-                  <span>{item.email}</span>
+                  <a href={`mailto:${item.email}`}>{item.email}</a>
                 </div>
               );
             })}
